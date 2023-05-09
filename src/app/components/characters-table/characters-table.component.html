@@ -24,29 +24,26 @@
         </tr>
     </thead>
     <tbody>
-        <ng-container *ngIf="mockData">
-            <tr *ngFor="let character of mockData.results">
-                <td>
-                    {{character.id}}
-                </td>
-                <td>
-                    {{character.name}}
-                </td>
-                <td>
-                    {{character.status}}
-                </td>
-                <td>
-                    {{character.species}}
-                </td>
-                <td>
-                    {{character.type}}
-                </td>
-                <td>
-                    {{character.gender}}
-                </td>
-            </tr>
-        </ng-container>
-
+        <tr *ngFor="let character of charactersDetails">
+            <td>
+                {{character.id}}
+            </td>
+            <td>
+                {{character.name}}
+            </td>
+            <td>
+                {{character.status}}
+            </td>
+            <td>
+                {{character.species}}
+            </td>
+            <td>
+                {{character.type}}
+            </td>
+            <td>
+                {{character.gender}}
+            </td>
+        </tr>
 
     </tbody>
 </table>
