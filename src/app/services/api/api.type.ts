@@ -1,13 +1,4 @@
-// const value =  5+8;
-
-// const value2: number = '5'
-
 export type Gender = 'Male' | 'Female'
-
-// export enum Gender2 {
-//     Male = 'Male',
-//     Female = 'Female'
-// }
 
 export interface CharactersResponse {
     info: CharactersInfoResponse;

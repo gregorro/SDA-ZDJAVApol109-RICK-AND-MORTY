@@ -1,49 +1,58 @@
-<h1>Characters in Rick and Morty movies</h1>
+<div class="container">
 
-<table>
+  <h1>Characters in Rick and Morty movies</h1>
+
+  <div class="table-navigation">
+    <button [disabled]="!prevPage" (click)="onPrevPage()">Poprzednia strona</button>
+    <button [disabled]="!nextPage" (click)="onNextPage()">Następna strona</button>
+  </div>
+
+  <table>
     <thead>
-        <tr>
-            <th>
-                ID
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                Status
-            </th>
-            <th>
-                Species
-            </th>
-            <th>
-                Type
-            </th>
-            <th>
-                Gender
-            </th>
-        </tr>
+      <tr>
+        <th>
+          ID
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Species
+        </th>
+        <th>
+          Type
+        </th>
+        <th>
+          Gender
+        </th>
+      </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let character of charactersDetails">
-            <td>
-                {{character.id}}
-            </td>
-            <td>
-                {{character.name}}
-            </td>
-            <td>
-                {{character.status}}
-            </td>
-            <td>
-                {{character.species}}
-            </td>
-            <td>
-                {{character.type}}
-            </td>
-            <td>
-                {{character.gender}}
-            </td>
-        </tr>
+      <tr *ngFor="let character of charactersDetails">
+        <td>
+          {{character.id}}
+        </td>
+        <td>
+          {{character.name}}
+        </td>
+        <td>
+          {{character.status}}
+        </td>
+        <td>
+          {{character.species}}
+        </td>
+        <td>
+          {{character.type}}
+        </td>
+        <td>
+          {{character.gender}}
+        </td>
+      </tr>
 
     </tbody>
-</table>
+  </table>
+
+</div>

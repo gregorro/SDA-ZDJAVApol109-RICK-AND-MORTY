@@ -1,0 +1,6 @@
+Stworzenie tabeli i nawigacji do endpointu  "https://rickandmortyapi.com/api/location"
+- stworzyc komponent location-table - polecenie ng generate
+- stworzenie nowej metody w api service getLocations()
+  - stworzenie nowego typu LocationResponse
+- uzycie poprawnych obiektów i nazw kolumn w html
+- uzycie poprawnych obiektów i nazw zmiennych i metod w komponencie
