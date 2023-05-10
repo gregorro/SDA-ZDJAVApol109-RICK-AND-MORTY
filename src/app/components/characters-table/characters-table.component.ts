@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api/api.service';
 import { CharacterDetails } from 'src/app/services/api/api.type';
+import { RowClickPayload } from '../characters-table-row/characters-table-row.component';
 
 //TODO:
 // 1 - na podstawie powyzszego schematu zadeklarowac wartosc zmiennej prevPage
@@ -54,5 +55,8 @@ export class CharactersTableComponent implements OnInit {
     }
   }
 
+  onRowClick(event: RowClickPayload){
+    console.log('Wartość w rodzicu ->', event)
+  }
 
 }

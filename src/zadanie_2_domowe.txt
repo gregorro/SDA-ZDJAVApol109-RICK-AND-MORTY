@@ -1,0 +1,3 @@
+1 (basic) - Do nowe stworzonego komponentu character-table-row stworzyć mechanikę pobierania detali z linków zawartych w Api.
+Wyswietlić te detale w formie console.log'ów
+2 (advanced) - dorobić mechanikę przełączania widoków w komponencie app.component tak by po kliknieciu np linku

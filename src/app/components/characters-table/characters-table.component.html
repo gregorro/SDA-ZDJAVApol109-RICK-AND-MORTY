@@ -28,29 +28,15 @@
         <th>
           Gender
         </th>
+        <th>
+          Origin
+        </th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let character of charactersDetails">
-        <td>
-          {{character.id}}
-        </td>
-        <td>
-          {{character.name}}
-        </td>
-        <td>
-          {{character.status}}
-        </td>
-        <td>
-          {{character.species}}
-        </td>
-        <td>
-          {{character.type}}
-        </td>
-        <td>
-          {{character.gender}}
-        </td>
-      </tr>
+      <ng-container *ngFor="let character of charactersDetails">
+        <app-characters-table-row [character]="character" (row-click)="onRowClick($event)"></app-characters-table-row>
+      </ng-container>
 
     </tbody>
   </table>

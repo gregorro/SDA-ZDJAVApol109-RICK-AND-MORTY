@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersTableComponent } from './components/characters-table/characters-table.component';
+import { CharactersTableRowComponent } from './components/characters-table-row/characters-table-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersTableComponent
+    CharactersTableComponent,
+    CharactersTableRowComponent
   ],
   imports: [
     BrowserModule,
