@@ -12,7 +12,11 @@ export class ApiService {
 
   private baseUrl: string = `https://rickandmortyapi.com/api`
 
-  public getCharacters(): Observable<CharactersResponse>{
-    return this.http.get<CharactersResponse>(`${this.baseUrl}/character`)
+  public getCharacters(pageNumber: string): Observable<CharactersResponse>{
+    return this.http.get<CharactersResponse>(`${this.baseUrl}/character`, {
+      params: {
+        page: pageNumber
+      }
+    })
   }
 }
