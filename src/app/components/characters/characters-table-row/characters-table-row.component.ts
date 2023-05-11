@@ -15,10 +15,6 @@ export class CharactersTableRowComponent {
   @Input('character') character!: CharacterDetails
   // @Output('row-click') rowClick = new EventEmitter<RowClickPayload>()
 
-  getIdByLink(link: string): string {
-    const segmentArray: string[] = link.split('/')
-    return segmentArray[segmentArray.length-1]
-  }
 }
 
 

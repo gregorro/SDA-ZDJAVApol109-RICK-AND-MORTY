@@ -19,6 +19,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
+import { GetIdByLinkPipe } from './pipes/get-id-by-link.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RouterModule } from '@angular/router';
     EpisodeDetailsComponent,
     NavigationComponent,
     HomePageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GetIdByLinkPipe
   ],
   imports: [
     BrowserModule,
