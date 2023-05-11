@@ -13,14 +13,11 @@ export interface RowClickPayload {
 })
 export class CharactersTableRowComponent {
   @Input('character') character!: CharacterDetails
-  @Output('row-click') rowClick = new EventEmitter<RowClickPayload>()
+  // @Output('row-click') rowClick = new EventEmitter<RowClickPayload>()
 
-
-  rowClicked(){
-    this.rowClick.emit({
-      name: this.character.name,
-      id: this.character.id
-    })
+  getIdByLink(link: string): string {
+    const segmentArray: string[] = link.split('/')
+    return segmentArray[segmentArray.length-1]
   }
 }
 

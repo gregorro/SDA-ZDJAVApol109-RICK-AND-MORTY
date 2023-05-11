@@ -55,8 +55,5 @@ export class CharactersTableComponent implements OnInit {
     }
   }
 
-  onRowClick(event: RowClickPayload){
-    console.log('Wartość w rodzicu ->', event)
-  }
 
 }
