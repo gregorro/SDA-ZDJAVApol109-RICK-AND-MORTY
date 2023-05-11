@@ -35,7 +35,7 @@
     </thead>
     <tbody>
       <ng-container *ngFor="let character of charactersDetails">
-        <app-characters-table-row [character]="character" (row-click)="onRowClick($event)"></app-characters-table-row>
+        <app-characters-table-row class="row" [character]="character" (row-click)="onRowClick($event)"></app-characters-table-row>
       </ng-container>
 
     </tbody>
