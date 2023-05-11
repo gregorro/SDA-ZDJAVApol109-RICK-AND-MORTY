@@ -19,4 +19,8 @@ export class ApiService {
       }
     })
   }
+
+  public getCharacterById(id: string){
+
+  }
 }
