@@ -3,7 +3,7 @@
     {{character.id}}
   </td>
   <td>
-    {{character.name}}
+    <a [routerLink]="'/characters/'+ character.id">{{character.name}}</a>
   </td>
   <td>
     {{character.status}}
