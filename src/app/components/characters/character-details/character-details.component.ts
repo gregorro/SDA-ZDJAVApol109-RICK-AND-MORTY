@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,11 +6,16 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './character-details.component.html',
   styleUrls: ['./character-details.component.css']
 })
-export class CharacterDetailsComponent {
+export class CharacterDetailsComponent implements OnInit {
   characterId: number;
 
   constructor(private router: ActivatedRoute){
     this.characterId = this.router.snapshot.params['id']
+  }
+
+  ngOnInit(): void {
+    //Tu pobierz dane z api
+    // this.apiService.getCharacterById(this.characterId)
   }
 
   // TODO - zadanko
